@@ -148,9 +148,13 @@ This app is configured for deployment on Databricks with the `app.yaml` configur
 ### Deploying to Databricks
 
 1. Upload the project to your Databricks workspace
-2. Ensure all dependencies are installed
-3. Run the training pipeline to generate model files
-4. Deploy using Databricks Apps
+2. **IMPORTANT:** Run `notebooks/Setup_Models.py` to generate data and train model
+3. Deploy using Databricks Apps with `app.yaml`
+4. Start/restart the app
+
+**⚠️ Common Issue:** If you see "Model not found" error, see **[DATABRICKS_TROUBLESHOOTING.md](DATABRICKS_TROUBLESHOOTING.md)**
+
+For detailed deployment instructions, see **[DATABRICKS_DEPLOYMENT.md](DATABRICKS_DEPLOYMENT.md)**
 
 ## 🔧 Configuration
 
